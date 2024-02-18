@@ -1,0 +1,12 @@
+---
+import Layout from "../layout/Layout.astro";
+import Product from "../components/Product";
+const response = await fetch("https://fakestoreapi.com/products");
+const products = await response.json();
+---
+
+<Layout title="Page 1">
+  <div style={{ marginTop: "10px" }}>
+    {products.map((el) => <Product client:load product={el} />)}
+  </div>
+</Layout>
