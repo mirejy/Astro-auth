@@ -7,6 +7,16 @@ const products = await response.json();
 
 <Layout title="Page 1">
   <div style={{ marginTop: "10px" }}>
-    {products.map((el) => <Product client:load product={el} />)}
+    {
+      products.map(({ price, title, description, image }) => (
+        <Product
+          client:load
+          price={price}
+          title={title}
+          description={description}
+          image={image}
+        />
+      ))
+    }
   </div>
 </Layout>
