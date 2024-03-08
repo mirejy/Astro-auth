@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.4",
     "@astrojs/react": "^3.0.10",
     "astro": "^4.4.0",
+    "firebase": "^10.8.1",
     "typescript": "^5.3.3"
   }
 }

@@ -1,0 +1,43 @@
+.ContainerAuth{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 90%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.SingInContainer {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color:  #1a73e8;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input {
+    height: 26px;
+}
+
+img {
+    cursor: pointer;
+}
+
+button {
+    background-color: #1a73e8;
+    color: wheat;
+    padding: 10px;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 3px;
+    width: max-content;
+}
