@@ -7,7 +7,7 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import google from "./google.png";
+import google from "../image/google.png";
 
 const SignIn = ({ toggleComponent, auth }) => {
   const [email, setEmail] = useState("");
