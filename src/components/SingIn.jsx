@@ -27,6 +27,7 @@ const SignIn = ({ toggleComponent, auth }) => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(getAuth(), provider);
+      setSingIn(true);
     } catch (error) {
       console.error("Error signing in with Google:", error);
     }
